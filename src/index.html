@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Виджет с плавным раскрытием и сворачиванием текста.">
+    <link rel="icon" href="data:,">
+    <title>Collapse</title>
+  </head>
+  <body>
+    <main class="demo">
+      <div class="collapse" data-collapse>
+        <button
+          class="collapse__button"
+          id="collapse-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="collapse-content"
+        >Collapse</button>
+        <div
+          class="collapse__content"
+          id="collapse-content"
+          role="region"
+          aria-labelledby="collapse-button"
+          aria-hidden="true"
+          inert
+        >
+          <div class="collapse__clip">
+            <div class="collapse__body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
